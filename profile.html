@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет - CosmoTutor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="page-profile">
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span class="logo-icon">✦</span>
+                    <span class="logo-text">CosmoTutor</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="services.html" class="nav-link">Услуги</a></li>
+                    <li><a href="about.html" class="nav-link">Обо мне</a></li>
+                    <li><a href="reviews.html" class="nav-link">Отзывы</a></li>
+                     <li>
+                        <a href="#" class="nav-link" id="bookingLink">
+                            <i class="fas fa-shopping-cart"></i> Запись
+                            <span class="booking-badge">0</span>
+                        </a>
+                    </li>
+                    <li class="nav-user">
+                        <div class="user-menu">
+                            <div class="user-avatar">
+                                <i class="fas fa-user-astronaut"></i>
+                            </div>
+                            <span class="user-name">1</span>
+                            <div class="user-dropdown">
+                                <a href="profile.html" class="dropdown-item active">
+                                    <i class="fas fa-user"></i> Личный кабинет
+                                </a>
+                                <a href="profile-settings.html" class="dropdown-item">
+                                    <i class="fas fa-cog"></i> Настройки
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a href="index.html" class="dropdown-item logout">
+                                    <i class="fas fa-sign-out-alt"></i> Выйти
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="stars-container"></div>
+
+    <div class="profile-container">
+        <div class="container">
+            <div class="profile-header">
+                <div class="profile-info">
+                    <div class="profile-avatar">
+                        <i class="fas fa-user-astronaut"></i>
+                    </div>
+                    <div class="profile-details">
+                        <h1>1</h1>
+                        <p class="profile-email">1@email.com</p>
+                        <div class="profile-stats">
+                            <div class="stat">
+                                <span class="stat-value">12</span>
+                                <span class="stat-label">занятий пройдено</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">87%</span>
+                                <span class="stat-label">прогресс</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">4.8</span>
+                                <span class="stat-label">средний балл</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-actions">
+                    <button class="btn btn-secondary" onclick="location.href='profile-settings.html'">
+                        <i class="fas fa-cog"></i> Настройки
+                    </button>
+                </div>
+            </div>
+
+            <div class="profile-content">
+                <div class="content-sidebar">
+                    <nav class="sidebar-nav">
+                        <a href="#schedule" class="nav-item active" data-tab="schedule">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>Расписание</span>
+                        </a>
+                        <a href="#materials" class="nav-item" data-tab="materials">
+                            <i class="fas fa-book"></i>
+                            <span>Учебные материалы</span>
+                        </a>
+                        <a href="#progress" class="nav-item" data-tab="progress">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Прогресс обучения</span>
+                        </a>
+                        <a href="#homework" class="nav-item" data-tab="homework">
+                            <i class="fas fa-tasks"></i>
+                            <span>Домашние задания</span>
+                        </a>
+                        <a href="#my-courses" class="nav-item" data-tab="my-courses">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Мои курсы</span>
+                        </a>
+                        <a href="#payments" class="nav-item" data-tab="payments">
+                            <i class="fas fa-credit-card"></i>
+                            <span>Платежи</span>
+                        </a>
+                    </nav>
+                </div>
+
+                <div class="content-main">
+                    <!-- Вкладка Расписание -->
+                    <div id="schedule" class="tab-content active">
+                        <div class="tab-header">
+                            <h2>Мое расписание</h2>
+                            <div class="view-options">
+                                <button class="view-option active" data-view="week">Неделя</button>
+                                <button class="view-option" data-view="month">Месяц</button>
+                            </div>
+                        </div>
+
+                        <div class="schedule-week">
+                            <div class="week-navigation">
+                                <button class="nav-btn prev-week">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <h3>23 - 29 декабря 2024</h3>
+                                <button class="nav-btn next-week">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+
+                            <div class="schedule-grid">
+                                <div class="day-column">
+                                    <div class="day-header">
+                                        <div class="day-name">Понедельник</div>
+                                        <div class="day-date">23 дек</div>
+                                    </div>
+                                    <div class="lessons-list">
+                                        <div class="lesson-card">
+                                            <div class="lesson-time">18:00 - 19:30</div>
+                                            <div class="lesson-title">Астрономия с нуля</div>
+                                            <div class="lesson-topic">Солнечная система</div>
+                                            <div class="lesson-actions">
+                                                <button class="btn btn-primary btn-small">Подключиться</button>
+                                                <a href="#" class="materials-link">Материалы</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="day-column">
+                                    <div class="day-header">
+                                        <div class="day-name">Среда</div>
+                                        <div class="day-date">25 дек</div>
+                                    </div>
+                                    <div class="lessons-list">
+                                        <div class="lesson-card">
+                                            <div class="lesson-time">17:00 - 18:30</div>
+                                            <div class="lesson-title">Подготовка к ЕГЭ</div>
+                                            <div class="lesson-topic">Законы Кеплера</div>
+                                            <div class="lesson-actions">
+                                                <button class="btn btn-primary btn-small">Подключиться</button>
+                                                <a href="#" class="materials-link">Материалы</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="upcoming-lessons">
+                            <h3>Ближайшие занятия</h3>
+                            <div class="lessons-cards">
+                                <div class="upcoming-lesson-card">
+                                    <div class="lesson-date">
+                                        <span class="date-day">23</span>
+                                        <span class="date-month">дек</span>
+                                    </div>
+                                    <div class="lesson-info">
+                                        <h4>Астрономия с нуля</h4>
+                                        <p>Солнечная система и планеты</p>
+                                        <div class="lesson-meta">
+                                            <div class="meta-item">
+                                                <i class="fas fa-clock"></i>
+                                                <span>18:00 - 19:30</span>
+                                            </div>
+                                            <div class="meta-item">
+                                                <i class="fas fa-video"></i>
+                                                <span>Zoom</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="lesson-status">
+                                        <button class="btn btn-primary btn-small">Подключиться</button>
+                                        <div class="status-badge completed">Запланировано</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Вкладка Учебные материалы -->
+                    <div id="materials" class="tab-content">
+                        <div class="tab-header">
+                            <h2>Учебные материалы</h2>
+                            <div class="search-box">
+                                <i class="fas fa-search"></i>
+                                <input type="text" class="search-input" placeholder="Поиск материалов...">
+                            </div>
+                        </div>
+
+                        <div class="materials-filters">
+                            <div class="filter-group">
+                                <label for="course-filter">Курс:</label>
+                                <select id="course-filter" class="filter-select">
+                                    <option value="all">Все курсы</option>
+                                    <option value="beginner">Астрономия с нуля</option>
+                                    <option value="exam">Подготовка к ЕГЭ</option>
+                                </select>
+                            </div>
+                            <div class="filter-group">
+                                <label for="type-filter">Тип:</label>
+                                <select id="type-filter" class="filter-select">
+                                    <option value="all">Все типы</option>
+                                    <option value="pdf">PDF</option>
+                                    <option value="video">Видео</option>
+                                    <option value="presentation">Презентации</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="materials-grid">
+                            <div class="material-card" data-course="beginner" data-type="pdf">
+                                <div class="material-icon">
+                                    <i class="fas fa-file-pdf"></i>
+                                </div>
+                                <div class="material-info">
+                                    <h3>Конспект: Солнечная система</h3>
+                                    <p>Полный конспект по теме Солнечной системы с иллюстрациями и схемами</p>
+                                    <div class="material-meta">
+                                        <span><i class="fas fa-file"></i> PDF, 2.4 MB</span>
+                                        <span><i class="fas fa-calendar"></i> 20.12.2025</span>
+                                    </div>
+                                </div>
+                                <div class="material-actions">
+                                    <button class="btn btn-primary">Скачать</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div id="progress" class="tab-content">
+                        <div class="tab-header">
+                            <h2>Прогресс обучения</h2>
+                        </div>
+
+                        <div class="progress-overview">
+                            <div class="overall-progress">
+                                <div class="progress-circle">
+                                    <svg width="120" height="120" viewBox="0 0 120 120">
+                                        <circle class="circle-bg" cx="60" cy="60" r="54" stroke-width="8"></circle>
+                                        <circle class="circle-fill" cx="60" cy="60" r="54" stroke-width="8" 
+                                                style="--progress: 87"></circle>
+                                    </svg>
+                                    <div class="progress-text">87%</div>
+                                </div>
+                                <div class="progress-info">
+                                    <h3>Общий прогресс</h3>
+                                    <p>Вы прошли 87% от всех курсов</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="progress-courses">
+                            <h3>Прогресс по курсам</h3>
+                            <div class="courses-progress">
+                                <div class="course-progress-card">
+                                    <div class="course-header">
+                                        <h4>Астрономия с нуля</h4>
+                                        <span class="progress-percent">92%</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 92%"></div>
+                                    </div>
+                                    <div class="course-stats">
+                                        <div class="stat">
+                                            <span class="stat-value">11/12</span>
+                                            <span class="stat-label">занятий</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-value">4.7</span>
+                                            <span class="stat-label">средний балл</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div id="homework" class="tab-content">
+                        <div class="tab-header">
+                            <h2>Домашние задания</h2>
+                            <div class="homework-filters">
+                                <button class="filter-btn active" data-filter="all">Все</button>
+                                <button class="filter-btn" data-filter="pending">На проверке</button>
+                                <button class="filter-btn" data-filter="completed">Проверено</button>
+                            </div>
+                        </div>
+
+                        <div class="homework-list">
+                            <div class="homework-card completed">
+                                <div class="homework-status completed"></div>
+                                <div class="homework-info">
+                                    <h3>Задание: Созвездия</h3>
+                                    <p>Курс: Астрономия с нуля</p>
+                                    <div class="homework-description">
+                                        Составьте карту звездного неба для вашего региона на текущий месяц.
+                                    </div>
+                                    <div class="homework-result">
+                                        <span class="result-score">9/10</span>
+                                        <span class="result-text">Отлично! Хорошо проработаны основные созвездия.</span>
+                                    </div>
+                                </div>
+                                <div class="homework-actions">
+                                    <button class="btn btn-secondary">Посмотреть решение</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div id="my-courses" class="tab-content">
+                        <div class="tab-header">
+                            <h2>Мои курсы</h2>
+                            <button class="btn btn-primary" onclick="location.href='services.html'">
+                                <i class="fas fa-plus"></i> Записаться на курс
+                            </button>
+                        </div>
+
+                        <div class="courses-grid">
+                            <div class="course-card">
+                                <div class="card-glow"></div>
+                                <div class="course-icon">🌌</div>
+                                <h3>Астрономия с нуля</h3>
+                                <p>Идеально для тех, кто только начинает знакомство с космосом</p>
+                                <div class="progress-bar" style="margin: 1rem 0;">
+                                    <div class="progress-fill" style="width: 92%"></div>
+                                </div>
+                                <div class="course-meta">
+                                    <span>92% завершено</span>
+                                    <span>11/12 занятий</span>
+                                </div>
+                                <button class="btn btn-primary">Продолжить</button>
+                            </div>
+
+                            <div class="course-card">
+                                <div class="card-glow"></div>
+                                <div class="course-icon">🚀</div>
+                                <h3>Подготовка к ЕГЭ</h3>
+                                <p>Системная подготовка к экзаменам по физике и астрономии</p>
+                                <div class="progress-bar" style="margin: 1rem 0;">
+                                    <div class="progress-fill" style="width: 65%"></div>
+                                </div>
+                                <div class="course-meta">
+                                    <span>65% завершено</span>
+                                    <span>10/15 занятий</span>
+                                </div>
+                                <button class="btn btn-primary">Продолжить</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div id="payments" class="tab-content">
+                        <div class="tab-header">
+                            <h2>История платежей</h2>
+                        </div>
+
+                        <div class="payment-summary">
+                            <div class="summary-card">
+                                <span class="summary-value">2</span>
+                                <span class="summary-label">Активных курса</span>
+                            </div>
+                            <div class="summary-card">
+                                <span class="summary-value">43 000 ₽</span>
+                                <span class="summary-label">Всего оплачено</span>
+                            </div>
+                        </div>
+
+                        <div class="payments-list">
+                            <div class="payment-card completed">
+                                <div class="payment-info">
+                                    <h3>Астрономия с нуля</h3>
+                                    <p>Оплачено • 20 декабря 2024</p>
+                                </div>
+                                <div class="payment-amount">
+                                    <span class="amount">18 000 ₽</span>
+                                    <span class="status completed">Оплачено</span>
+                                </div>
+                                <div class="payment-actions">
+                                    <button class="btn btn-secondary">Скачать чек</button>
+                                </div>
+                            </div>
+
+                            <div class="payment-card completed">
+                                <div class="payment-info">
+                                    <h3>Подготовка к ЕГЭ</h3>
+                                    <p>Оплачено • 15 декабря 2024</p>
+                                </div>
+                                <div class="payment-amount">
+                                    <span class="amount">25 000 ₽</span>
+                                    <span class="status completed">Оплачено</span>
+                                </div>
+                                <div class="payment-actions">
+                                    <button class="btn btn-secondary">Скачать чек</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="profile.js"></script>
+    
+</body>
+</html>

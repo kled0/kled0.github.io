@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="page-home">
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span class="logo-icon">✦</span>
+                    <span class="logo-text">CosmoTutor</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link ">Главная</a></li>
+                    <li><a href="services.html" class="nav-link">Услуги</a></li>
+                    <li><a href="about.html" class="nav-link active">Обо мне</a></li>
+                    <li><a href="reviews.html" class="nav-link">Отзывы</a></li>
+                    <li><a href="login.html" class="nav-link">Вход</a></li>
+                     <li>
+                        <a href="#" class="nav-link" id="bookingLink">
+                            <i class="fas fa-shopping-cart"></i> Запись
+                            <span class="booking-badge">0</span>
+                        </a>
+                    </li>
+                </ul>
+                 <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="stars-container"></div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text-with-photo">
+                    <div class="hero-text">
+                        <div class="hero-kicker">Преподаватель астрономии</div>
+                        <h1 class="hero-title">
+                            Олег <span class="gradient-text">Болотников</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            Кандидат физико-математических наук, профессиональный репетитор с 7-летним опытом преподования астрономии.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="services.html" class="btn btn-primary">Посмотреть услуги</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="courses">
+        <div class="container">
+            <h2 class="section-title">Мой<span> подход</span> к обучению</h2>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="card-glow"></div>
+                    <div class="course-icon">🌌</div>
+                    <h3>Индивидульный подход</h3>
+                    <p>Для каждого студента разрабатываю персональную программу обучения, учитывающую уровень подготовки и цели.</p>
+                    <ul class="course-list">
+                        <li>Адаптация под ваш темп</li>
+                        <li>Фокус на интересующие темы</li>
+                        <li>Гибкий график занятий</li>
+                    </ul>
+                </div>
+
+                <div class="course-card featured">
+                    <div class="card-glow"></div>
+                    <div class="featured-badge">Особенность</div>
+                    <div class="course-icon">🌍</div>
+                    <h3>Практическая направленность</h3>
+                    <p>Использую современные инструменты: виртуальные планетарии, онлайн-телескопы, симуляторы космических явлений.</p>
+                    <ul class="course-list">
+                        <li>Работа с реальными данными</li>
+                        <li>Интерактивная демонстрация</li>
+                        <li>Проектная деятельность</li>
+                    </ul>
+                </div>
+
+                <div class="course-card">
+                    <div class="card-glow"></div>
+                    <div class="course-icon">🚀</div>
+                    <h3>Современные методики</h3>
+                    <p>Сочетание классического подхода с digital-инстурментами для максимальной эффективности</p>
+                    <ul class="course-list">
+                        <li>Онлайн-платформы</li>
+                        <li>Интерактивные материалы</li>
+                        <li>Геймификация обучения</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="form-container">
+        <div class="container">
+            <div class="form-container-wide">
+                <h2>Связаться со мной</h2>
+                <p class="form-subtitle">Есть вопросы? Напишите мне!</p>
+
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="contact-name">Ваше имя</label>
+                        <input type="text" id="contact-name" placeholder="Иван Иванов">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-email">Email</label>
+                        <input type="email" id="contact-email" placeholder="you@gmail.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contact-message">Сообщение</label>
+                        <textarea id="contact-message" placeholder="Расскажите о ваших целях..." rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full">Отправить сообщение</button>
+                </form>
+
+                <div class="form-link">
+                    Или напишите напрямую:
+                    <a href="malito:olegbolotnikov@gmail.com">olegbolotnikov@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div style="height: 3rem;"></div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-icon">✦</span>
+                        <span class="logo-text">CosmoTutor</span>
+                    </div>
+                    <p class="footer-description">
+                        Онлайн‑репетитор по астрономии для школьников, студентов и взрослых. 
+                        Откройте Вселенную через персональные занятия.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="VKontakte">
+                            <i class="fab fa-vk social-icon"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Telegram">
+                            <i class="fab fa-telegram social-icon"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube social-icon"></i>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="footer-section">
+                    <h3 class="footer-title">Контакты</h3>
+                    <div class="footer-contacts">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <span>info@cosmotutor.ru</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone contact-icon"></i>
+                            <span>+7 (999) 123-45-67</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock contact-icon"></i>
+                            <span>Пн-Пт: 9:00-21:00</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="footer-section">
+                    <h3 class="footer-title">Помощь</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Частые вопросы</a></li>
+                        <li><a href="#" class="footer-link">Поддержка</a></li>
+                        <li><a href="#" class="footer-link">Условия использования</a></li>
+                        <li><a href="#" class="footer-link">Политика конфиденциальности</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 CosmoTutor. Все права защищены.</p>
+                <p>Онлайн‑репетитор по астрономии для школьников, студентов и взрослых.</p>
+            </div>
+        </div>
+    </footer>
+    
+        <script src="script.js"></script>
+        <script src="booking.js"></script>
+    </body>
+    </html>

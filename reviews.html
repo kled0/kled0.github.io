@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="page-reviews">
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span class="logo-icon">✦</span>
+                    <span class="logo-text">CosmoTutor</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="services.html" class="nav-link">Услуги</a></li>
+                    <li><a href="about.html" class="nav-link">Обо мне</a></li>
+                    <li><a href="reviews.html" class="nav-link active">Отзывы</a></li>
+                    <li><a href="login.html" class="nav-link">Вход</a></li>
+                     <li>
+                        <a href="#" class="nav-link" id="bookingLink">
+                            <i class="fas fa-shopping-cart"></i> Запись
+                            <span class="booking-badge">0</span>
+                        </a>
+                    </li>
+                </ul>
+                 <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="stars-container"></div>
+
+    <section class="reviews-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Отзывы учеников</h1>
+                <p>Узнайте, что говорят о занятиях мои ученики</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews-section">
+        <div class="container">
+            <div class="reviews-stats">
+                <div class="stat-item">
+                    <div class="stat-number">4.9</div>
+                    <div class="stat-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="stat-label">Средняя оценка</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">127</div>
+                    <div class="stat-label">Отзывов</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">96%</div>
+                    <div class="stat-label">Рекомендуют</div>
+                </div>
+            </div>
+
+            <div class="reviews-filters">
+                <div class="filter-group">
+                    <label for="course-filter">Курс:</label>
+                    <select id="course-filter" class="filter-select">
+                        <option value="all">Все курсы</option>
+                        <option value="beginner">Астрономия с нуля</option>
+                        <option value="exam">Подготовка к ЕГЭ/ОГЭ</option>
+                        <option value="practice">Практическая астрономия</option>
+                        <option value="advanced">Продвинутые курсы</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="rating-filter">Оценка:</label>
+                    <select id="rating-filter" class="filter-select">
+                        <option value="all">Все оценки</option>
+                        <option value="5">5 звезд</option>
+                        <option value="4">4 звезды и выше</option>
+                        <option value="3">3 звезды и выше</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="sort">Сортировка:</label>
+                    <select id="sort" class="filter-select">
+                        <option value="newest">Сначала новые</option>
+                        <option value="oldest">Сначала старые</option>
+                        <option value="highest">Сначала с высокой оценкой</option>
+                        <option value="lowest">Сначала с низкой оценкой</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="reviews-grid" id="reviewsGrid">
+                <!-- Отзыв 1 -->
+                <div class="review-card" data-course="exam" data-rating="5" data-date="2025-03-15">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">
+                                <i class="fas fa-user-astronaut"></i>
+                            </div>
+                            <div class="reviewer-details">
+                                <h3 class="reviewer-name">111</h3>
+                                <div class="review-course">Подготовка к ЕГЭ</div>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <p>11111</p>
+                    </div>
+                    <div class="review-date">15 марта 2025</div>
+                </div>
+            </div>
+
+            <div class="reviews-pagination">
+                <button class="btn btn-secondary" id="loadMoreBtn">Показать еще отзывы</button>
+            </div>
+
+            <div class="add-review-section">
+                <h2 class="section-title">Оставить <span>отзыв</span></h2>
+                <div class="form-container form-container-wide">
+                    <form id="reviewForm">
+                        <div class="form-group">
+                            <label for="reviewerName">Ваше имя</label>
+                            <input type="text" id="reviewerName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reviewCourse">Курс</label>
+                            <select id="reviewCourse" required>
+                                <option value="">Выберите курс</option>
+                                <option value="beginner">Астрономия с нуля</option>
+                                <option value="exam">Подготовка к ЕГЭ/ОГЭ</option>
+                                <option value="practice">Практическая астрономия</option>
+                                <option value="advanced">Продвинутые курсы</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="reviewRating">Оценка</label>
+                            <div class="rating-input">
+                                <span class="rating-star" data-value="1"><i class="far fa-star"></i></span>
+                                <span class="rating-star" data-value="2"><i class="far fa-star"></i></span>
+                                <span class="rating-star" data-value="3"><i class="far fa-star"></i></span>
+                                <span class="rating-star" data-value="4"><i class="far fa-star"></i></span>
+                                <span class="rating-star" data-value="5"><i class="far fa-star"></i></span>
+                            </div>
+                            <input type="hidden" id="reviewRating" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reviewText">Текст отзыва</label>
+                            <textarea id="reviewText" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Отправить отзыв</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-icon">✦</span>
+                        <span class="logo-text">CosmoTutor</span>
+                    </div>
+                    <p class="footer-description">
+                        Онлайн‑репетитор по астрономии для школьников, студентов и взрослых. 
+                        Откройте Вселенную через персональные занятия.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="VKontakte">
+                            <i class="fab fa-vk social-icon"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Telegram">
+                            <i class="fab fa-telegram social-icon"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube social-icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Контакты</h3>
+                    <div class="footer-contacts">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <span>info@cosmotutor.ru</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone contact-icon"></i>
+                            <span>+7 (999) 123-45-67</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock contact-icon"></i>
+                            <span>Пн-Пт: 9:00-21:00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Помощь</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Частые вопросы</a></li>
+                        <li><a href="#" class="footer-link">Поддержка</a></li>
+                        <li><a href="#" class="footer-link">Условия использования</a></li>
+                        <li><a href="#" class="footer-link">Политика конфиденциальности</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 CosmoTutor. Все права защищены.</p>
+                <p>Онлайн‑репетитор по астрономии для школьников, студентов и взрослых.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="reviews.js"></script>
+    <script src="booking.js"></script>
+</body>
+</html>

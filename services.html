@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги - CosmoTutor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="page-services">
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span class="logo-icon">✦</span>
+                    <span class="logo-text">CosmoTutor</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="services.html" class="nav-link active">Услуги</a></li>
+                    <li><a href="about.html" class="nav-link">Обо мне</a></li>
+                    <li><a href="reviews.html" class="nav-link">Отзывы</a></li>
+                    <li><a href="login.html" class="nav-link">Вход</a></li>
+                    <li>
+                        <a href="#" class="nav-link" id="bookingLink">
+                            <i class="fas fa-shopping-cart"></i> Запись
+                            <span class="booking-badge">0</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="stars-container"></div>
+
+    <section class="services-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Наши услуги</h1>
+                <p>Профессиональные образовательные услуги по астрономии для любого уровня подготовки</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-section">
+        <div class="container">
+            <div class="services-grid">
+                
+                <div class="service-card">
+                    <div class="service-badge">Рекомендуем</div>
+                    <div class="service-icon">🌌</div>
+                    <h3>Астрономия с нуля</h3>
+                    <p>Идеально для тех, кто только начинает знакомство с космосом и хочет понять базовые принципы.</p>
+                    <ul class="service-features">
+                        <li>12 занятий по 60 минут</li>
+                        <li>Основы астрофизики и космологии</li>
+                        <li>Созвездия, планеты, звёзды</li>
+                        <li>Домашние задания с разбором</li>
+                    </ul>
+                    <div class="service-price">
+                        <span class="current-price">18 000 ₽</span>
+                        <span class="old-price">21 000 ₽</span>
+                        <span class="discount">-14%</span>
+                    </div>
+                    <div class="service-meta">
+                        <div class="meta-item">
+                            <span class="meta-icon">⏱️</span>
+                            <span class="meta-text">12 занятий</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-icon">👥</span>
+                            <span class="meta-text">Группа до 8 человек</span>
+                        </div>
+                    </div>
+                    <div class="service-actions">
+                        <a href="service-beginner.html" class="btn btn-secondary">Подробнее</a>
+                        <button class="btn btn-primary book-btn" data-course="astronomy-beginner">Записаться</button>
+                    </div>
+                </div>
+
+                
+                <div class="service-card">
+                    <div class="service-badge">Популярный</div>
+                    <div class="service-icon">🚀</div>
+                    <h3>Подготовка к ЕГЭ/ОГЭ</h3>
+                    <p>Системная подготовка к экзаменам по физике и астрономии с проработкой всех типов задач.</p>
+                    <ul class="service-features">
+                        <li>15 интенсивных занятий</li>
+                        <li>Полный разбор теории и задач</li>
+                        <li>Пробные тесты в формате экзамена</li>
+                        <li>Индивидуальный план подготовки</li>
+                    </ul>
+                    <div class="service-price">
+                        <span class="current-price">25 000 ₽</span>
+                        <span class="old-price">29 000 ₽</span>
+                        <span class="discount">-14%</span>
+                    </div>
+                    <div class="service-meta">
+                        <div class="meta-item">
+                            <span class="meta-icon">⏱️</span>
+                            <span class="meta-text">15 занятий</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-icon">👥</span>
+                            <span class="meta-text">Группа до 6 человек</span>
+                        </div>
+                    </div>
+                    <div class="service-actions">
+                        <a href="service-ege.html" class="btn btn-secondary">Подробнее</a>
+                        <button class="btn btn-primary book-btn" data-course="ege-preparation">Записаться</button>
+                    </div>
+                </div>
+
+                
+                <div class="service-card">
+                    <div class="service-badge">Новый</div>
+                    <div class="service-icon">🔭</div>
+                    <h3>Практическая астрономия</h3>
+                    <p>Наблюдения, работа с телескопом, программами планетариев и анализ реальных данных.</p>
+                    <ul class="service-features">
+                        <li>10 практических занятий</li>
+                        <li>Онлайн‑наблюдения и разбор снимков</li>
+                        <li>Знакомство с профессиональными инструментами</li>
+                        <li>Проект по итогам курса</li>
+                    </ul>
+                    <div class="service-price">
+                        <span class="current-price">22 000 ₽</span>
+                        <span class="old-price">26 000 ₽</span>
+                        <span class="discount">-15%</span>
+                    </div>
+                    <div class="service-meta">
+                        <div class="meta-item">
+                            <span class="meta-icon">⏱️</span>
+                            <span class="meta-text">10 занятий</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-icon">👥</span>
+                            <span class="meta-text">Группа до 5 человек</span>
+                        </div>
+                    </div>
+                    <div class="service-actions">
+                        <a href="service-practice.html" class="btn btn-secondary">Подробнее</a>
+                        <button class="btn btn-primary book-btn" data-course="practical-astronomy">Записаться</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-icon">✦</span>
+                        <span class="logo-text">CosmoTutor</span>
+                    </div>
+                    <p class="footer-description">
+                        Профессиональные образовательные услуги по астрономии для любого уровня подготовки. 
+                        Выберите подходящий курс и начните изучение Вселенной.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="VKontakte">
+                            <i class="fab fa-vk social-icon"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Telegram">
+                            <i class="fab fa-telegram social-icon"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube social-icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Контакты</h3>
+                    <div class="footer-contacts">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <span>courses@cosmotutor.ru</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone contact-icon"></i>
+                            <span>+7 (999) 765-43-21</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock contact-icon"></i>
+                            <span>Ежедневно: 8:00-22:00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Поддержка</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Выбор курса</a></li>
+                        <li><a href="#" class="footer-link">Оплата и возвраты</a></li>
+                        <li><a href="#" class="footer-link">Техническая поддержка</a></li>
+                        <li><a href="#" class="footer-link">Связаться с нами</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 CosmoTutor. Все права защищены.</p>
+                <p>Профессиональные образовательные услуги по астрономии</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="booking.js"></script>
+</body>
+</html>

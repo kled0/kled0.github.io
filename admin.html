@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Панель администратора - CosmoTutor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="page-admin">
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span class="logo-icon">✦</span>
+                    <span class="logo-text">CosmoTutor Admin</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Главная<li>
+                    <li><a href="#" class="nav-link logout-admin">Выйти</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="stars-container"></div>
+
+    <div class="admin-container">
+        <div class="container">
+            <div class="admin-header">
+                <h1>Панель администратора</h1>
+                <p>Управление записями и отзывами</p>
+            </div>
+
+            <div class="admin-tabs">
+                <button class="admin-tab active" data-tab="bookings">Новые записи</button>
+                <button class="admin-tab" data-tab="reviews">Управление отзывами</button>
+                <button class="admin-tab" data-tab="stats">Статистика</button>
+            </div>
+
+            <div class="admin-content">
+                <div id="bookings" class="tab-pane active">
+                    <div class="pane-header">
+                        <h2>Новые записи на курсы</h2>
+                        <div class="pane-actions">
+                            <button class="btn btn-secondary" id="refreshBookings">
+                                <i class="fas fa-sync-alt"></i> Обновить
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="bookings-list" id="bookingsList">
+                        <div class="empty-state">
+                            <i class="fas fa-calendar-check"></i>
+                            <p>Нет новых записей</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="reviews" class="tab-pane">
+                    <div class="pane-header">
+                        <h2>Управление отзывами</h2>
+                        <div class="pane-actions">
+                            <div class="search-box">
+                                <i class="fas fa-search"></i>
+                                <input type="text" id="searchReviews" placeholder="Поиск отзывов...">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reviews-admin-list" id="reviewsAdminList">
+                        <div class="empty-state">
+                            <i class="fas fa-comments"></i>
+                            <p>Нет отзывов для модерации</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="stats" class="tab-pane">
+                    <div class="pane-header">
+                        <h2>Статистика</h2>
+                    </div>
+
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3 id="totalBookings">0</h3>
+                                <p>Всего записей</p>
+                            </div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3 id="totalReviews">0</h3>
+                                <p>Всего отзывов</p>
+                            </div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3 id="avgRating">0.0</h3>
+                                <p>Средний рейтинг</p>
+                            </div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="stat-info">
+                                <h3 id="pendingReviews">0</h3>
+                                <p>Ожидают модерации</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="charts-section">
+                        <div class="chart-card">
+                            <h3>Распределение по курсам</h3>
+                            <div class="chart-container">
+                                <canvas id="coursesChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="confirmModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Подтверждение действия</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p id="confirmMessage">Вы уверены, что хотите выполнить это действие?</p>
+            </div>
+            <div class="modal-actions">
+                <button class="btn btn-secondary" id="cancelAction">Отмена</button>
+                <button class="btn btn-primary" id="confirmAction">Подтвердить</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>

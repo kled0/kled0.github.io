@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /login.html
+Disallow: /register.html
+Disallow: /profile.html
+Disallow: /profile-settings.html
+Disallow: /admin.html
+Disallow: /404.html
+Disallow: /admin/
+Disallow: /private/
+
+Sitemap: https://cosmotutor.ru/sitemap.xml
+
+User-agent: Yandex
+Host: https://cosmotutor.ru

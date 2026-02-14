@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подготовка к ЕГЭ/ОГЭ - CosmoTutor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="service.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="page-service">
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span class="logo-icon">✦</span>
+                    <span class="logo-text">CosmoTutor</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="services.html" class="nav-link">Услуги</a></li>
+                    <li><a href="about.html" class="nav-link">Обо мне</a></li>
+                    <li><a href="reviews.html" class="nav-link">Отзывы</a></li>
+                    <li><a href="login.html" class="nav-link">Вход</a></li>
+                    <li>
+                        <a href="#" class="nav-link" id="bookingLink">
+                            <i class="fas fa-shopping-cart"></i> Запись
+                            <span class="booking-badge">0</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="stars-container"></div>
+
+    <section class="service-details">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Главная</a> / 
+                <a href="services.html">Услуги</a> / 
+                <span>Подготовка к ЕГЭ/ОГЭ</span>
+            </div>
+
+            <div class="service-layout">
+                <div class="service-content">
+                    <h1 class="service-title">Подготовка к ЕГЭ/ОГЭ</h1>
+                    
+                    <div class="service-rating">
+                        <div class="stars">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star half">★</span>
+                        </div>
+                        <span class="rating-text">4.7 (89 отзывов)</span>
+                    </div>
+
+                    <div class="service-price">
+                        <span class="current-price">25 000 ₽</span>
+                        <span class="old-price">29 000 ₽</span>
+                        <span class="discount">-14%</span>
+                    </div>
+
+                    <div class="service-description">
+                        <p>Системная подготовка к экзаменам по физике и астрономии с проработкой всех типов задач. Гарантия качественной подготовки и высоких результатов.</p>
+                    </div>
+
+                    <div class="service-features">
+                        <h3>Что включено в курс:</h3>
+                        <ul>
+                            <li>15 интенсивных занятий по 90 минут</li>
+                            <li>Полный разбор теории и задач ЕГЭ/ОГЭ</li>
+                            <li>5 пробных тестов в формате экзамена</li>
+                            <li>Индивидуальный план подготовки</li>
+                            <li>Доступ к закрытой базе материалов</li>
+                            <li>Поддержка куратора 24/7</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-format">
+                        <h3>Формат обучения:</h3>
+                        <div class="format-options">
+                            <div class="format-option active" data-format="group">
+                                <span class="format-type">Групповой</span>
+                                <span class="format-price">25 000 ₽</span>
+                                <span class="format-desc">Занятия в группе до 6 человек</span>
+                            </div>
+                            <div class="format-option" data-format="individual">
+                                <span class="format-type">Индивидуальный</span>
+                                <span class="format-price">45 000 ₽</span>
+                                <span class="format-desc">Персональные занятия с репетитором</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-cta">
+                        <button class="btn btn-primary btn-large book-btn" data-course="ege-preparation">Записаться на курс</button>
+                        <button class="btn btn-secondary" id="consultService">Получить консультацию</button>
+                    </div>
+
+                    <div class="service-tabs">
+                        <div class="tab-headers">
+                            <button class="tab-header active" data-tab="program">Программа</button>
+                            <button class="tab-header" data-tab="results">Результаты</button>
+                            <button class="tab-header" data-tab="reviews">Отзывы</button>
+                        </div>
+                        
+                        <div class="tab-content active" id="program">
+                            <h3>Программа курса</h3>
+                            <div class="program-modules">
+                                <div class="module">
+                                    <h4>Модуль 1: Основы астрономии</h4>
+                                    <ul>
+                                        <li>Небесная сфера и координаты</li>
+                                        <li>Солнечная система</li>
+                                        <li>Законы Кеплера</li>
+                                    </ul>
+                                </div>
+                                <div class="module">
+                                    <h4>Модуль 2: Астрофизика</h4>
+                                    <ul>
+                                        <li>Спектральный анализ</li>
+                                        <li>Эволюция звезд</li>
+                                        <li>Космологические модели</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-content" id="results">
+                            <h3>Результаты студентов</h3>
+                            <div class="results-stats">
+                                <div class="stat-item">
+                                    <span class="stat-number">94%</span>
+                                    <span class="stat-label">сдали ЕГЭ на 80+ баллов</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">87%</span>
+                                    <span class="stat-label">поступили в выбранный ВУЗ</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-content" id="reviews">
+                            <h3>Отзывы студентов</h3>
+                            <div class="review">
+                                <div class="review-header">
+                                    <span class="review-author">Анна Петрова</span>
+                                    <div class="review-rating">
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                    </div>
+                                </div>
+                                <p class="review-text">"Отличная подготовка к ЕГЭ! Преподаватель доступно объясняет сложные темы, много практических заданий. Сдала экзамен на 94 балла!"</p>
+                            </div>
+                            <div class="review">
+                                <div class="review-header">
+                                    <span class="review-author">Дмитрий Соколов</span>
+                                    <div class="review-rating">
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star half">★</span>
+                                    </div>
+                                </div>
+                                <p class="review-text">"Очень структурированный курс. Особенно понравились пробные тесты - они помогли понять формат экзамена и распределить время."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-sidebar">
+                    <div class="service-card">
+                        <div class="service-meta">
+                            <div class="meta-item">
+                                <span class="meta-icon">⏱️</span>
+                                <span class="meta-text">15 занятий</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-icon">👥</span>
+                                <span class="meta-text">Группа до 6 человек</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-icon">📅</span>
+                                <span class="meta-text">Старт: 10 января</span>
+                            </div>
+                        </div>
+                        <div class="service-highlights">
+                            <h4>Преимущества курса:</h4>
+                            <ul>
+                                <li>Авторские методички</li>
+                                <li>Разбор реальных заданий ЕГЭ</li>
+                                <li>Поддержка после курса</li>
+                                <li>Гарантия результата</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="service.js"></script>
+    <script src="booking.js"></script>
+</body>
+</html>
