@@ -8,7 +8,7 @@ Disallow: /404.html
 Disallow: /admin/
 Disallow: /private/
 
-Sitemap: https://cosmotutor.ru/sitemap.xml
+Sitemap: https://kled0.github.io/sitemap.xml
 
 User-agent: Yandex
-Host: https://cosmotutor.ru
+Host: https://kled0.github.io
